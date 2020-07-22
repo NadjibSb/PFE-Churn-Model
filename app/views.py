@@ -1,15 +1,22 @@
+from flask import jsonify, request, Response
+import pandas as pd
+
 from app import app
 from app import model
-from flask import jsonify, request
+from app import dataCtrl
 
-import pandas as pd
 
 @app.route('/')
 def server_is_up():
    return "<h1>Server is up</h1>"
 
 
-@app.route('/predict', methods=['GET'])
+@app.route('/predictAll', methods=['GET'])
+def predictAll():
+	return Response(dataCtrl.predictAll(), mimetype='application/json')
+
+
+@app.route('/predictTest', methods=['GET'])
 def predict():
 	#data = request.get_json()
 
@@ -23,7 +30,7 @@ def predict():
 	#df = pd.DataFrame.from_dict(data["data"])
 	#return "data: \n{0}".format(type(data["data"]))
 	#return "type: {0} \n data: {1}".format(type(data),data)
-	return model.predict(data)
+	return Response(model.predict(data), mimetype='application/json')
 
    #return "args: {0}".format(request.args.get('key'))
 	#return "args: {0}".format(request.get_json())

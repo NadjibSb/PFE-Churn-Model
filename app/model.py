@@ -48,9 +48,9 @@ def predict(data):
 	df = standarise(df)
 	df = pca(df)
 	pred = kmeans(df)
-	df_in['class'] = pred
+	df_in['segment'] = pred
 
-	json_data = df_in[["mobile_number","class"]].to_json(orient='index')
+	json_data = df_in[["mobile_number","segment"]].to_json(orient='records')
 	return json_data
 
 
