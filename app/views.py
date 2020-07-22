@@ -1,14 +1,24 @@
-from app import app
-from app import model
 from flask import jsonify, request, Response
 import simplejson as json
+
+from app import app
+from app import model
+from app import controller
 
 
 @app.route('/')
 def server_is_up():
    return "<h1>Server is up</h1>"
 
-@app.route('/predict', methods=['GET'])
+
+
+@app.route('/predictAll', methods=['GET'])
+def predictAll():
+	return Response(controller.predictAll(), mimetype='application/json')
+
+
+
+@app.route('/predictTest', methods=['GET'])
 def predict():
 
 	data = [
