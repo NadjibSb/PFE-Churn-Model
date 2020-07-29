@@ -17,6 +17,11 @@ def predictAll():
 	return Response(controller.predictAll(), mimetype='application/json')
 
 
+@app.route('/evaluate', methods=['GET'])
+def evaluate():
+	return Response(controller.evaluate(), mimetype='application/json')
+
+
 
 @app.route('/predictTest', methods=['GET'])
 def predict():

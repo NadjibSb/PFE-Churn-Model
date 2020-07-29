@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import pickle
 
+from sklearn.metrics import accuracy_score
+
 from app.util import BASE_PATH
 
 
@@ -40,4 +42,14 @@ def predict(data):
 
 	json_data = result[["mobile_number","pred_churn"]].to_json(orient='records')
 	return json_data
+
+
+
+def evaluate(data):
+	
+	df_in = pd.DataFrame(data,columns=["churn","pred_churn"])
+	test_acc = accuracy_score(df_in["churn"], df_in["pred_churn"])
+	print(round(test_acc,4))
+	
+	return dict({"accuracy_score": round(test_acc,4)})
 	
