@@ -1,5 +1,5 @@
 from app.observer import Observer
-from app.plan import Plan
+from app.mapek.plan import Plan
 
 
 
