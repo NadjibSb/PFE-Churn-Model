@@ -26,7 +26,7 @@ def model(segmented_data):
 	for df in segmented_data:
 		seg_num = df['segment'].unique()[0]
 		_df = df.drop(['mobile_number','segment','churn'], axis=1)
-		pred = models[seg_num-1].predict(_df)
+		pred = models[seg_num].predict(_df)
 		df['pred_churn'] = pred
 		
 	return segmented_data
@@ -47,9 +47,19 @@ def predict(data):
 
 def evaluate(data):
 	
-	df_in = pd.DataFrame(data,columns=["churn","pred_churn"])
-	test_acc = accuracy_score(df_in["churn"], df_in["pred_churn"])
-	print(round(test_acc,4))
-	
-	return dict({"accuracy_score": round(test_acc,4)})
+	df_in = pd.DataFrame(data,columns=["churn","pred_churn","segment"])
+	segmented_data = splitData(df_in)
+
+	scores = dict()
+	for df in segmented_data:
+		seg_num = df['segment'].unique()[0]
+		test_acc = accuracy_score(df["churn"], df["pred_churn"])
+
+		key = "Segement_{0}".format(seg_num)
+		if key not in scores:
+			scores[key]= {}
+		scores[key]["accurency"] = round(test_acc,4)
+
+	print(scores)
+	return scores
 	
