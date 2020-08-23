@@ -18,7 +18,10 @@ class Knowledge:
             raise Exception("This class is a singleton!")
         else:
             Knowledge.__instance = self
-            Knowledge.__dict = self.loadJson()
+            try:
+                Knowledge.__dict = self.loadJson()
+            except:
+                Knowledge.__dict = {}
 
 
     def saveJson(self):
@@ -32,13 +35,17 @@ class Knowledge:
             return data
 
     
-    def save(self,key,value):
-        if key not in Knowledge.__dict:
-            Knowledge.__dict[key]= {}
-        Knowledge.__dict[key]["value"] = value
-        if "history" not in Knowledge.__dict[key]:
-            Knowledge.__dict[key]["history"] = []
-        Knowledge.__dict[key]["history"].append({"date": time.time(), "value": value}) 
+    def save(self,superKey,key,value):
+        if superKey not in Knowledge.__dict:
+            Knowledge.__dict[superKey]= {}
+        if key not in Knowledge.__dict[superKey]:
+            Knowledge.__dict[superKey][key]= {}
+        dic = Knowledge.__dict[superKey][key]
+        for k in value:
+            dic[k] = value[k]
+        if "history" not in dic:
+            dic["history"] = []
+        dic["history"].append({"date": time.time(), "value": value}) 
         self.saveJson()
     
     def get(self,key):

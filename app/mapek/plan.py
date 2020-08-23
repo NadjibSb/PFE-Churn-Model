@@ -4,7 +4,7 @@ from app.mapek.execute import Execute
 
 
 class Plan(Observer):
-    def notify(self,message):
-        print(message)
+    def notify(self):
+        print("\n--------\nPlanning ...")
         execute = Execute()
-        execute.notify("executing...")
+        execute.notify()

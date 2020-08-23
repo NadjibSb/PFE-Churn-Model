@@ -1,5 +1,5 @@
 class Observer:
-    def notify(self, message):
+    def notify(self):
         pass
         
 class Subject:

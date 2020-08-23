@@ -1,15 +1,37 @@
 {
-    "test": {
-        "value": 3333333,
-        "history": [
-            {
-                "date": 1598139379.3164635,
-                "value": 3333333
-            },
-            {
-                "date": 1598139406.3656652,
-                "value": 3333333
-            }
-        ]
+    "Monitor": {
+        "Model_2": {
+            "accurency": 0.9804,
+            "history": [
+                {
+                    "date": 1598142784.3083167,
+                    "value": {
+                        "accurency": 0.9804
+                    }
+                }
+            ]
+        },
+        "Model_0": {
+            "accurency": 0.9416,
+            "history": [
+                {
+                    "date": 1598142784.308542,
+                    "value": {
+                        "accurency": 0.9416
+                    }
+                }
+            ]
+        },
+        "Model_1": {
+            "accurency": 0.9823,
+            "history": [
+                {
+                    "date": 1598142784.3153367,
+                    "value": {
+                        "accurency": 0.9823
+                    }
+                }
+            ]
+        }
     }
 }
