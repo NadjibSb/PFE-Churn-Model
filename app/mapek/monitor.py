@@ -13,7 +13,7 @@ class Monitor(Observer):
     def notify(self):
         print("\n--------\nmonitoring ...")
 
-        k = Knowledge.getInstance()
+        knowledge = Knowledge.getInstance()
         data = {
                 "Model_2": {
                     "accurency": 0.9804
@@ -27,7 +27,7 @@ class Monitor(Observer):
             }
         #data = requests.get(DB_SERVER+"/evaluate").json()
         for key in data:
-            k.save("Monitor",key,data[key])
+            knowledge.save("Monitor",key,data[key])
 
         analyse = Analyse()
         analyse.notify()

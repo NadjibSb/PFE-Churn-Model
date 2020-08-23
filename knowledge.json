@@ -4,7 +4,7 @@
             "accurency": 0.9804,
             "history": [
                 {
-                    "date": 1598142784.3083167,
+                    "date": 1598145513.712038,
                     "value": {
                         "accurency": 0.9804
                     }
@@ -15,7 +15,7 @@
             "accurency": 0.9416,
             "history": [
                 {
-                    "date": 1598142784.308542,
+                    "date": 1598145513.7123146,
                     "value": {
                         "accurency": 0.9416
                     }
@@ -26,9 +26,44 @@
             "accurency": 0.9823,
             "history": [
                 {
-                    "date": 1598142784.3153367,
+                    "date": 1598145513.7182627,
                     "value": {
                         "accurency": 0.9823
+                    }
+                }
+            ]
+        }
+    },
+    "Analyse": {
+        "Model_2": {
+            "to_adapt": true,
+            "history": [
+                {
+                    "date": 1598145513.7186697,
+                    "value": {
+                        "to_adapt": true
+                    }
+                }
+            ]
+        },
+        "Model_0": {
+            "to_adapt": false,
+            "history": [
+                {
+                    "date": 1598145513.7190783,
+                    "value": {
+                        "to_adapt": false
+                    }
+                }
+            ]
+        },
+        "Model_1": {
+            "to_adapt": true,
+            "history": [
+                {
+                    "date": 1598145513.7194176,
+                    "value": {
+                        "to_adapt": true
                     }
                 }
             ]
