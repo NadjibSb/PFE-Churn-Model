@@ -5,6 +5,21 @@ from app.mapek.knowledge import Knowledge
 
 
 class Analyse(Observer):
+    __instance = None
+
+    @staticmethod 
+    def getInstance():
+        if Analyse.__instance == None:
+            Analyse()
+        return Analyse.__instance
+        
+    def __init__(self):
+        if Analyse.__instance != None:
+            raise Exception("This class is a singleton!")
+        else:
+            Analyse.__instance = self
+
+
     def notify(self):
         print("\n--------\nAnalysing ...")
         toPlan=False
@@ -22,5 +37,5 @@ class Analyse(Observer):
                 knowledge.save("Analyse",key,{"to_adapt": False})
 
         if toPlan:
-            plan = Plan()
+            plan = Plan.getInstance()
             plan.notify()

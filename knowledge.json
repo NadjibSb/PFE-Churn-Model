@@ -8,8 +8,23 @@
                     "value": {
                         "accurency": 0.9804
                     }
+                },
+                {
+                    "date": 1598391609.7386544,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804
+                    }
+                },
+                {
+                    "date": 1598391657.373879,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804
+                    }
                 }
-            ]
+            ],
+            "id": 2
         },
         "Model_0": {
             "accurency": 0.9416,
@@ -19,8 +34,23 @@
                     "value": {
                         "accurency": 0.9416
                     }
+                },
+                {
+                    "date": 1598391609.7389789,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416
+                    }
+                },
+                {
+                    "date": 1598391657.3742878,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416
+                    }
                 }
-            ]
+            ],
+            "id": 0
         },
         "Model_1": {
             "accurency": 0.9823,
@@ -30,8 +60,23 @@
                     "value": {
                         "accurency": 0.9823
                     }
+                },
+                {
+                    "date": 1598391609.7393548,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823
+                    }
+                },
+                {
+                    "date": 1598391657.3811834,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823
+                    }
                 }
-            ]
+            ],
+            "id": 1
         }
     },
     "Analyse": {
@@ -40,6 +85,18 @@
             "history": [
                 {
                     "date": 1598145513.7186697,
+                    "value": {
+                        "to_adapt": true
+                    }
+                },
+                {
+                    "date": 1598391609.739843,
+                    "value": {
+                        "to_adapt": true
+                    }
+                },
+                {
+                    "date": 1598391657.382372,
                     "value": {
                         "to_adapt": true
                     }
@@ -54,6 +111,18 @@
                     "value": {
                         "to_adapt": false
                     }
+                },
+                {
+                    "date": 1598391609.7402563,
+                    "value": {
+                        "to_adapt": false
+                    }
+                },
+                {
+                    "date": 1598391657.3832715,
+                    "value": {
+                        "to_adapt": false
+                    }
                 }
             ]
         },
@@ -62,6 +131,18 @@
             "history": [
                 {
                     "date": 1598145513.7194176,
+                    "value": {
+                        "to_adapt": true
+                    }
+                },
+                {
+                    "date": 1598391609.740654,
+                    "value": {
+                        "to_adapt": true
+                    }
+                },
+                {
+                    "date": 1598391657.3843274,
                     "value": {
                         "to_adapt": true
                     }
