@@ -45,7 +45,10 @@ class Knowledge:
             dic[k] = value[k]
         if "history" not in dic:
             dic["history"] = []
-        dic["history"].append({"date": time.time(), "value": value}) 
+        if (len(dic["history"])!=0) and (dic["history"][-1]["value"]==value):
+            dic["history"][-1]["date"]= time.time()
+        else:
+            dic["history"].append({"date": time.time(), "value": value}) 
         self.saveJson()
     
     def get(self,key):

@@ -30,11 +30,11 @@ class Analyse(Observer):
             modelInfo = data[key]
             if ("accurency" in modelInfo) & (modelInfo["accurency"]>0.95):
                 print(key+" adapt")
-                knowledge.save("Analyse",key,{"to_adapt": True})
+                knowledge.save("Analyse",key,{"to_adapt": True,'id':modelInfo["id"]})
                 toPlan=True
             else:
                 print(key+" pass")
-                knowledge.save("Analyse",key,{"to_adapt": False})
+                knowledge.save("Analyse",key,{"to_adapt": False,'id':modelInfo["id"]})
 
         if toPlan:
             plan = Plan.getInstance()
