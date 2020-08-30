@@ -1,17 +1,15 @@
 from threading import Thread
 import time
 
-from app import app
-from app.mapek.monitor import Monitor
+from app import app as flaskApp
+import app.mapek as mapek
 
 
 def runAPI():
-    app.run(port=5002)
+    flaskApp.run(port=5002)
 
 def runMAPEK():
-    time.sleep(10)
-    monitor = Monitor()
-    monitor.notify()
+    mapek.run()
 
 
 if __name__ == '__main__':
