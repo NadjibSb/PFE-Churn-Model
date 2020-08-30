@@ -26,9 +26,10 @@ class Analyse(Observer):
 
         knowledge = Knowledge.getInstance()
         data = knowledge.get("Monitor")
+        seuil = knowledge.get("params")
         for key in data:
             modelInfo = data[key]
-            if ("accurency" in modelInfo) & (modelInfo["accurency"]>0.95):
+            if ("accurency" in modelInfo) & (modelInfo["accurency"]>seuil["accurency"]):
                 print(key+" adapt")
                 knowledge.save("Analyse",key,{"to_adapt": True,'id':modelInfo["id"]})
                 toPlan=True

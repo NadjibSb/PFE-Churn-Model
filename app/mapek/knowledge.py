@@ -4,13 +4,12 @@ import json
 class Knowledge:
     __instance = None
     __dict = {}
+    __objectifs = {}
     
     @staticmethod 
     def getInstance():
         if Knowledge.__instance == None:
             Knowledge()
-            print("Loaded JSON:")
-            print(Knowledge.__dict)
         return Knowledge.__instance
         
     def __init__(self):
@@ -22,15 +21,24 @@ class Knowledge:
                 Knowledge.__dict = self.loadJson()
             except:
                 Knowledge.__dict = {}
+            try:
+                Knowledge.__objectifs = self.loadObjectifs()
+            except:
+                raise Exception("Can't load ./app/mapek/knowledge/objectifs.json")
 
 
     def saveJson(self):
-        with open('knowledge.json', 'w') as fp:
+        with open('./app/mapek/knowledge/knowledge.json', 'w') as fp:
             json.dump(Knowledge.__dict, fp,indent=4)
 
 
     def loadJson(self):
-        with open('knowledge.json', 'r') as fp:
+        with open('./app/mapek/knowledge/knowledge.json', 'r') as fp:
+            data = json.load(fp)
+            return data
+
+    def loadObjectifs(self):
+        with open('./app/mapek/knowledge/objectifs.json', 'r') as fp:
             data = json.load(fp)
             return data
 
@@ -52,4 +60,9 @@ class Knowledge:
         self.saveJson()
     
     def get(self,key):
-        return Knowledge.__dict[key]
+        if key in Knowledge.__dict:
+            return Knowledge.__dict[key]
+        elif key in Knowledge.__objectifs:
+            return Knowledge.__objectifs[key]
+        else:
+            return None

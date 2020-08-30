@@ -2,6 +2,10 @@
 import pandas as pd
 import numpy as np
 import os
+from tpot import TPOTClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+import pickle
 
 from app.observer import Observer
 from app.mapek.execute import Execute
@@ -24,6 +28,57 @@ class Plan(Observer):
         else:
             Plan.__instance = self
 
+    def _train(self,ID,df):
+
+        # drop irrelevent columns
+        _dfM = df.drop(['mobile_number','segment'], axis=1)
+
+        ### Split data to train/test data
+        _dfM1 = _dfM[_dfM.churn==0]
+        _dfM2 = _dfM[_dfM.churn==1]
+        print("- Churners :",_dfM1.shape)
+        print("- Non Churners :",_dfM2.shape)
+
+        # split dataset to 70% Train data & 30% test data
+        X_train1, X_test1 = train_test_split(_dfM1, test_size=0.3, train_size=0.7, random_state=1)
+        X_train2, X_test2 = train_test_split(_dfM2, test_size=0.3, train_size=0.7, random_state=1)
+        train = pd.concat([X_train1,X_train2],axis=0).sample(frac=1)
+        test= pd.concat([X_test1,X_test2],axis=0).sample(frac=1)
+
+
+        X_train = train.drop(['churn'], axis=1)
+        y_train = train['churn']
+        X_test = test.drop(['churn'], axis=1)
+        y_test = test['churn']
+
+        print("X_train Shape : ", X_train.shape)
+        print("X_test Shape : ", X_test.shape)
+
+        # Train model
+        model = TPOTClassifier(
+                                config_dict='TPOT light',
+                                memory='auto',
+                                template='Selector-Transformer-Classifier',
+                                scoring='accuracy',
+                                max_time_mins=1,
+                                #generations=1,
+                                verbosity=2
+                                )
+        model.fit(X_train, y_train)
+
+        # Evaluate model
+        knowledge = Knowledge.getInstance()
+        y_pred = model.predict(X_test)
+        test_acc = model.score(X_test, y_test)
+        knowledge.save("Plan","new_accuracy",test_acc)
+        print("Test Accuracy score {0}".format(test_acc))
+        print(classification_report(y_test, y_pred))
+        print(confusion_matrix(y_test, y_pred))
+
+        # Export model
+        pickle.dump(model.fitted_pipeline_,open('{0}/models/model{1}.pickle'.format(BASE_PATH,ID),"wb"))
+
+
 
 
     def notify(self):
@@ -37,9 +92,11 @@ class Plan(Observer):
                 print(key+" adapting ...")
                 df = pd.read_csv("{0}/../dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]),index_col="index")
                 print("load dataset {0} : ".format(modelInfo["id"])+str(df.shape))  
-
+                self._train(modelInfo["id"],df)
 
                 execute = Execute.getInstance()
                 execute.notify()
+
+            
 
         
