@@ -10,6 +10,13 @@
                         "id": 2,
                         "accurency": 0.9804
                     }
+                },
+                {
+                    "date": 1598806544.1957479,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804
+                    }
                 }
             ]
         },
@@ -23,6 +30,13 @@
                         "id": 0,
                         "accurency": 0.9416
                     }
+                },
+                {
+                    "date": 1598806544.1962416,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416
+                    }
                 }
             ]
         },
@@ -32,6 +46,13 @@
             "history": [
                 {
                     "date": 1598806390.9220355,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823
+                    }
+                },
+                {
+                    "date": 1598806544.2023137,
                     "value": {
                         "id": 1,
                         "accurency": 0.9823
@@ -58,6 +79,13 @@
                         "to_adapt": false,
                         "id": 2
                     }
+                },
+                {
+                    "date": 1598806544.2033968,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
                 }
             ]
         },
@@ -71,6 +99,13 @@
                         "to_adapt": false,
                         "id": 0
                     }
+                },
+                {
+                    "date": 1598806544.204507,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
                 }
             ]
         },
@@ -80,6 +115,13 @@
             "history": [
                 {
                     "date": 1598806390.9228587,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1598806544.2057178,
                     "value": {
                         "to_adapt": true,
                         "id": 1
