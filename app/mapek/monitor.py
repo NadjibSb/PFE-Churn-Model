@@ -1,7 +1,7 @@
 import time
 import requests
 import json
-from app.observer import Observer
+from app.mapek.observer import Observer
 from app.mapek.analyse import Analyse
 from app.mapek.knowledge import Knowledge
 

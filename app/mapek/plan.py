@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 import pickle
 
-from app.observer import Observer
+from app.mapek.observer import Observer
 from app.mapek.execute import Execute
 from app.mapek.knowledge import Knowledge
 
@@ -90,9 +90,9 @@ class Plan(Observer):
             modelInfo = data[key]
             if modelInfo["to_adapt"]:
                 print(key+" adapting ...")
-                df = pd.read_csv("{0}/../dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]),index_col="index")
+                df = pd.read_csv("{0}/dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]),index_col="index")
                 print("load dataset {0} : ".format(modelInfo["id"])+str(df.shape))  
-                self._train(modelInfo["id"],df)
+                #self._train(modelInfo["id"],df)
 
                 execute = Execute.getInstance()
                 execute.notify()

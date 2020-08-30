@@ -1,4 +1,4 @@
-from app.observer import Observer
+from app.mapek.observer import Observer
 
 
 

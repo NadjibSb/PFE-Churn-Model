@@ -1,4 +1,4 @@
-from app.observer import Observer
+from app.mapek.observer import Observer
 from app.mapek.plan import Plan
 from app.mapek.knowledge import Knowledge
 
