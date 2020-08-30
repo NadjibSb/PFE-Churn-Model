@@ -55,9 +55,10 @@ def evaluate(data):
 		seg_num = df['segment'].unique()[0]
 		test_acc = accuracy_score(df["churn"], df["pred_churn"])
 
-		key = "Segement_{0}".format(seg_num)
+		key = "Model_{0}".format(seg_num)
 		if key not in scores:
 			scores[key]= {}
+		scores[key]["id"] = seg_num
 		scores[key]["accurency"] = round(test_acc,4)
 
 	print(scores)

@@ -28,10 +28,10 @@ def evaluate():
     data_array=[]
 
     if "pages" in count: 
-        for p in range(1,3):
-            print(p)
+        for p in range(1,count["pages"]+1):
+            #print(p)
             data_array += requests.get(DB_SERVER+"/all/{0}?churn=1&pred_churn=1&segment=1".format(p)).json()
-            print(len(data_array))
+            #print(len(data_array))
     else:
         e = json.dumps({"error": "unexpected value", "data": count})
         return e
