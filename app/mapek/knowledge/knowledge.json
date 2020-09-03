@@ -17,6 +17,41 @@
                         "id": 2,
                         "accurency": 0.9804
                     }
+                },
+                {
+                    "date": 1599143777.4388316,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804
+                    }
+                },
+                {
+                    "date": 1599143822.1051228,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804
+                    }
+                },
+                {
+                    "date": 1599143972.4525294,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804
+                    }
+                },
+                {
+                    "date": 1599146683.7536793,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804
+                    }
+                },
+                {
+                    "date": 1599146826.4851332,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804
+                    }
                 }
             ]
         },
@@ -37,6 +72,41 @@
                         "id": 0,
                         "accurency": 0.9416
                     }
+                },
+                {
+                    "date": 1599143777.4396503,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416
+                    }
+                },
+                {
+                    "date": 1599143822.1058931,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416
+                    }
+                },
+                {
+                    "date": 1599143972.4534771,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416
+                    }
+                },
+                {
+                    "date": 1599146683.7544787,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416
+                    }
+                },
+                {
+                    "date": 1599146826.4860964,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416
+                    }
                 }
             ]
         },
@@ -53,6 +123,41 @@
                 },
                 {
                     "date": 1598806544.2023137,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823
+                    }
+                },
+                {
+                    "date": 1599143777.4404132,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823
+                    }
+                },
+                {
+                    "date": 1599143822.1065052,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823
+                    }
+                },
+                {
+                    "date": 1599143972.4541025,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823
+                    }
+                },
+                {
+                    "date": 1599146683.7606573,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823
+                    }
+                },
+                {
+                    "date": 1599146826.4867747,
                     "value": {
                         "id": 1,
                         "accurency": 0.9823
@@ -86,6 +191,41 @@
                         "to_adapt": false,
                         "id": 2
                     }
+                },
+                {
+                    "date": 1599143777.4411838,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599143822.1071317,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599143972.4547372,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599146683.7629342,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599146826.4875634,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
                 }
             ]
         },
@@ -106,6 +246,41 @@
                         "to_adapt": false,
                         "id": 0
                     }
+                },
+                {
+                    "date": 1599143777.4419901,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599143822.1076443,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599143972.4553068,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599146683.7642365,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599146826.4882498,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
                 }
             ]
         },
@@ -122,6 +297,41 @@
                 },
                 {
                     "date": 1598806544.2057178,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599143777.4430735,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599143822.1082792,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599143972.4558744,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599146683.7648795,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599146826.4889688,
                     "value": {
                         "to_adapt": true,
                         "id": 1

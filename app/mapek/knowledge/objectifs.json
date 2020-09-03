@@ -1,5 +1,6 @@
 {
-  "params": {
-    "accurency": 0.982
-  }
+    "params": {
+        "accurency": 0.982,
+        "frequency": 3602
+    }
 }

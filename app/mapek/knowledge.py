@@ -65,6 +65,7 @@ class Knowledge:
         if key in Knowledge.__dict:
             return Knowledge.__dict[key]
         elif key in Knowledge.__objectifs:
+            Knowledge.__objectifs = self.loadObjectifs()
             return Knowledge.__objectifs[key]
         else:
             return None
