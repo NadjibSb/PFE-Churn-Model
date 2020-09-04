@@ -1,3 +1,4 @@
+import time
 from app.mapek.observer import Observer
 from app.mapek.plan import Plan
 from app.mapek.knowledge import Knowledge
@@ -32,6 +33,7 @@ class Analyse(Observer):
             if ("accurency" in modelInfo) & (modelInfo["accurency"]>seuil["accurency"]):
                 print(key+" adapt")
                 knowledge.save("Analyse",key,{"to_adapt": True,'id':modelInfo["id"]})
+                knowledge.save("Status",key,{"status":0, "start_adapt_time": time.time()},False)
                 toPlan=True
             else:
                 print(key+" pass")

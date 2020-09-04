@@ -43,7 +43,7 @@ class Knowledge:
             return data
 
     
-    def save(self,superKey,key,value):
+    def save(self,superKey,key,value,history=True):
         if superKey not in Knowledge.__dict:
             Knowledge.__dict[superKey]= {}
         if key not in Knowledge.__dict[superKey]:
@@ -51,14 +51,15 @@ class Knowledge:
         dic = Knowledge.__dict[superKey][key]
         for k in value:
             dic[k] = value[k]
-        if "history" not in dic:
-            dic["history"] = []
-        '''
-        if (len(dic["history"])!=0) and (dic["history"][-1]["value"]==value):
-            dic["history"][-1]["date"]= time.time()
-        else:
-            dic["history"].append({"date": time.time(), "value": value}) '''
-        dic["history"].append({"date": time.time(), "value": value})
+        if history:
+            if "history" not in dic:
+                dic["history"] = []
+            '''
+            if (len(dic["history"])!=0) and (dic["history"][-1]["value"]==value):
+                dic["history"][-1]["date"]= time.time()
+            else:
+                dic["history"].append({"date": time.time(), "value": value}) '''
+            dic["history"].append({"date": time.time(), "value": value})
         self.saveJson()
     
     def get(self,key):

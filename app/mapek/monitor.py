@@ -45,8 +45,11 @@ class Monitor(Observer):
             }
         #data = requests.get(DB_SERVER+"/evaluate").json()
         for key in data:
-            knowledge.save("Monitor",key,data[key])
-
+            content = data[key]
+            knowledge.save("Monitor",key,content)
+            content["status"] = 1
+            knowledge.save("Status",key,content,False)
+        time.sleep(2)
         analyse = Analyse.getInstance()
         analyse.notify()
 

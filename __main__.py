@@ -14,4 +14,5 @@ def runMAPEK():
 
 if __name__ == '__main__':
     Thread(target = runAPI).start()
+    time.sleep(2)
     Thread(target = runMAPEK).start()

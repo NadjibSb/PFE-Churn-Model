@@ -1,4 +1,6 @@
 ## imports
+import time
+
 import pandas as pd
 import numpy as np
 import os
@@ -28,7 +30,7 @@ class Plan(Observer):
         else:
             Plan.__instance = self
 
-    def _train(self,ID,df):
+    def _train(self,key,ID,df):
 
         # drop irrelevent columns
         _dfM = df.drop(['mobile_number','segment'], axis=1)
@@ -70,7 +72,9 @@ class Plan(Observer):
         knowledge = Knowledge.getInstance()
         y_pred = model.predict(X_test)
         test_acc = model.score(X_test, y_test)
-        knowledge.save("Plan","new_accuracy",test_acc)
+        knowledge.save("Plan",key,{"new_accuracy":test_acc})
+        self.updateStatus(key)
+        ####
         print("Test Accuracy score {0}".format(test_acc))
         print(classification_report(y_test, y_pred))
         print(confusion_matrix(y_test, y_pred))
@@ -92,10 +96,21 @@ class Plan(Observer):
                 print(key+" adapting ...")
                 df = pd.read_csv("{0}/dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]),index_col="index")
                 print("load dataset {0} : ".format(modelInfo["id"])+str(df.shape))  
-                #self._train(modelInfo["id"],df)
+
+                #self._train(key,modelInfo["id"],df)
+                knowledge.save("Plan",key,{"test_accuracy":99})
+                time.sleep(10)
+                self.updateStatus(key)
 
                 execute = Execute.getInstance()
                 execute.notify()
+
+    def updateStatus(self,key):
+        knowledge = Knowledge.getInstance()
+        status = knowledge.get("Status")[key]
+        end = time.time()
+        duration = end - status["start_adapt_time"]
+        knowledge.save("Status",key,{"status":1, "last_adapt_time": end, "last_adapt_duration": duration},False)
 
             
 

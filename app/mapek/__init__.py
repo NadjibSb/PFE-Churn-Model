@@ -8,3 +8,4 @@ def run():
     #time.sleep(10)
     monitor = Monitor()
     monitor.notify()
+
