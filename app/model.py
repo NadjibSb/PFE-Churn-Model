@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 import pickle
+import os
 
 from sklearn.metrics import accuracy_score
 
@@ -15,9 +16,20 @@ def splitData(df):
 	return segmented_data
 
 def loadModels():
-	model1 = pickle.load(open('{0}/model/tpot_model1.pickle'.format(BASE_PATH),"rb"))
-	model2 = pickle.load(open('{0}/model/tpot_model2.pickle'.format(BASE_PATH),"rb"))
-	model3 = pickle.load(open('{0}/model/tpot_model3.pickle'.format(BASE_PATH),"rb"))
+	if os.path.isfile('{0}/model/_tpot_model1.pickle'.format(BASE_PATH)):
+		model1 = pickle.load(open('{0}/model/_tpot_model1.pickle'.format(BASE_PATH),"rb"))
+	else:
+		model1 = pickle.load(open('{0}/model/tpot_model1.pickle'.format(BASE_PATH),"rb"))
+
+	if os.path.isfile('{0}/model/_tpot_model2.pickle'.format(BASE_PATH)):
+		model2 = pickle.load(open('{0}/model/_tpot_model2.pickle'.format(BASE_PATH),"rb"))
+	else:
+		model2 = pickle.load(open('{0}/model/tpot_model2.pickle'.format(BASE_PATH),"rb"))
+
+	if os.path.isfile('{0}/model/_tpot_model3.pickle'.format(BASE_PATH)):
+		model3 = pickle.load(open('{0}/model/_tpot_model3.pickle'.format(BASE_PATH),"rb"))
+	else:
+		model3 = pickle.load(open('{0}/model/tpot_model3.pickle'.format(BASE_PATH),"rb"))
 	return (model1, model2, model3)
 
 def model(segmented_data):
