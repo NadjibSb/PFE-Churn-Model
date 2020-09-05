@@ -38,8 +38,8 @@ class Plan(Observer):
         ### Split data to train/test data
         _dfM1 = _dfM[_dfM.churn==0]
         _dfM2 = _dfM[_dfM.churn==1]
-        print("- Churners :",_dfM1.shape)
-        print("- Non Churners :",_dfM2.shape)
+        #print("- Churners :",_dfM1.shape)
+        #print("- Non Churners :",_dfM2.shape)
 
         # split dataset to 70% Train data & 30% test data
         X_train1, X_test1 = train_test_split(_dfM1, test_size=0.3, train_size=0.7, random_state=1)
@@ -53,8 +53,8 @@ class Plan(Observer):
         X_test = test.drop(['churn'], axis=1)
         y_test = test['churn']
 
-        print("X_train Shape : ", X_train.shape)
-        print("X_test Shape : ", X_test.shape)
+        #print("X_train Shape : ", X_train.shape)
+        #print("X_test Shape : ", X_test.shape)
 
         # Train model
         model = TPOTClassifier(
@@ -95,12 +95,14 @@ class Plan(Observer):
             if modelInfo["to_adapt"]:
                 print(key+" adapting ...")
                 df = pd.read_csv("{0}/dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]),index_col="index")
-                print("load dataset {0} : ".format(modelInfo["id"])+str(df.shape))  
+                #print("load dataset {0} : ".format(modelInfo["id"])+str(df.shape))  
 
-                #self._train(key,modelInfo["id"],df)
+                self._train(key,modelInfo["id"],df)
+                '''
                 knowledge.save("Plan",key,{"test_accuracy":99})
-                time.sleep(2)
+                time.sleep(10)
                 self.updateStatus(key)
+                '''
 
                 execute = Execute.getInstance()
                 execute.notify({"id":modelInfo["id"]})

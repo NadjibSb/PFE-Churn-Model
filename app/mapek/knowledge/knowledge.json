@@ -1,0 +1,309 @@
+{
+    "Monitor": {
+        "Model_2": {
+            "id": 2,
+            "accurency": 0.9804,
+            "history": [
+                {
+                    "date": 1599313679.3759809,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599315867.208786,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316069.1751134,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316116.1029487,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316204.5566154,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                }
+            ]
+        },
+        "Model_0": {
+            "id": 0,
+            "accurency": 0.9416,
+            "history": [
+                {
+                    "date": 1599313679.3849258,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599315867.2162168,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316069.1826632,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316116.104101,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316204.5660293,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                }
+            ]
+        },
+        "Model_1": {
+            "id": 1,
+            "accurency": 0.9823,
+            "history": [
+                {
+                    "date": 1599313679.3887386,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599315867.2177372,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316069.1835964,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316116.105294,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599316204.5690923,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                }
+            ]
+        }
+    },
+    "Status": {
+        "Model_2": {
+            "id": 2,
+            "accurency": 0.9804,
+            "status": 1,
+            "start_adapt_time": 1599316071.1895885
+        },
+        "Model_0": {
+            "id": 0,
+            "accurency": 0.9416,
+            "status": 1,
+            "start_adapt_time": 1599316071.1928816
+        },
+        "Model_1": {
+            "id": 1,
+            "accurency": 0.9823,
+            "status": 1,
+            "start_adapt_time": 1599316071.196147,
+            "last_adapt_time": 1599315930.5630596,
+            "last_adapt_duration": 61.33751106262207
+        }
+    },
+    "Analyse": {
+        "Model_2": {
+            "to_adapt": false,
+            "id": 2,
+            "history": [
+                {
+                    "date": 1599313681.4001684,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599315869.2209358,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599316071.1875932,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599316118.1097121,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599316206.5737329,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                }
+            ]
+        },
+        "Model_0": {
+            "to_adapt": false,
+            "id": 0,
+            "history": [
+                {
+                    "date": 1599313681.4029057,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599315869.222551,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599316071.1912677,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599316118.1122725,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599316206.576206,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                }
+            ]
+        },
+        "Model_1": {
+            "to_adapt": false,
+            "id": 1,
+            "history": [
+                {
+                    "date": 1599313681.4105675,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599315869.224049,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599316071.194517,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599316118.1207573,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599316206.585002,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 1
+                    }
+                }
+            ]
+        }
+    },
+    "Plan": {
+        "Model_1": {
+            "test_accuracy": 99,
+            "history": [
+                {
+                    "date": 1599313681.4761293,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599315930.562494,
+                    "value": {
+                        "new_accuracy": 0.9390962671905697
+                    }
+                }
+            ],
+            "new_accuracy": 0.9390962671905697
+        }
+    }
+}

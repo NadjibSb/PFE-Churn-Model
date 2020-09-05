@@ -30,7 +30,7 @@ class Analyse(Observer):
         seuil = knowledge.get("params")
         for key in data:
             modelInfo = data[key]
-            if ("accurency" in modelInfo) & (modelInfo["accurency"]>seuil["accurency"]):
+            if ("accurency" in modelInfo) & (modelInfo["accurency"]<seuil["accurency"]):
                 print(key+" adapt")
                 knowledge.save("Analyse",key,{"to_adapt": True,'id':modelInfo["id"]})
                 knowledge.save("Status",key,{"status":0, "start_adapt_time": time.time()},False)
@@ -42,3 +42,5 @@ class Analyse(Observer):
         if toPlan:
             plan = Plan.getInstance()
             plan.notify()
+        else : 
+            print("\n\nNo adaptation needed\n--------------------------------")

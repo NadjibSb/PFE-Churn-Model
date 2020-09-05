@@ -22,9 +22,9 @@ def getParams():
       saved = getObjectifs()["params"]
       if 'accurency' in content:
          if (content['accurency']<=1) and (content['accurency']>0):
-            saved['accurency'] = content['accurency']
+            saved['accurency'] = float(content['accurency'])
       if 'frequency' in content:
-         saved['frequency'] = content['frequency']
+         saved['frequency'] = int(content['frequency'])
       setObjectifs({"params":saved})
       return saved
 

@@ -29,6 +29,7 @@ class Monitor(Observer):
         print("\n--------\nmonitoring ...")
 
         knowledge = Knowledge.getInstance()
+        '''
         data = {
                 "Model_2": {
                     "id": 2,
@@ -43,7 +44,8 @@ class Monitor(Observer):
                     "accurency": 0.9823
                 }
             }
-        #data = requests.get(DB_SERVER+"/evaluate").json()
+        '''
+        data = requests.get(DB_SERVER+"/evaluate").json()
         for key in data:
             content = data[key]
             knowledge.save("Monitor",key,content)

@@ -2,10 +2,15 @@
 import time
 
 from app.mapek.monitor import Monitor
+from app.mapek.knowledge import Knowledge
 
 
 def run():
-    #time.sleep(10)
     monitor = Monitor()
-    monitor.notify()
+    knowledge = Knowledge.getInstance()
+    params = knowledge.get("params")
+
+    while True:
+        monitor.notify()
+        time.sleep(params["frequency"])
 
