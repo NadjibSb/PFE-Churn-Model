@@ -38,4 +38,5 @@ def evaluate():
 
 
     evaluation = model.evaluate(data_array)
+    print(evaluation)
     return json.dumps(evaluation)

@@ -64,7 +64,7 @@ def evaluate(data):
 
 	scores = dict()
 	for df in segmented_data:
-		seg_num = df['segment'].unique()[0]
+		seg_num = int(df['segment'].unique()[0])
 		test_acc = accuracy_score(df["churn"], df["pred_churn"])
 
 		key = "Model_{0}".format(seg_num)
@@ -73,6 +73,5 @@ def evaluate(data):
 		scores[key]["id"] = seg_num
 		scores[key]["accurency"] = round(test_acc,4)
 
-	print(scores)
 	return scores
 	
