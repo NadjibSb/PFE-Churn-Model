@@ -99,11 +99,12 @@ class Plan(Observer):
 
                 #self._train(key,modelInfo["id"],df)
                 knowledge.save("Plan",key,{"test_accuracy":99})
-                time.sleep(10)
+                time.sleep(2)
                 self.updateStatus(key)
 
                 execute = Execute.getInstance()
-                execute.notify()
+                execute.notify({"id":modelInfo["id"]})
+
 
     def updateStatus(self,key):
         knowledge = Knowledge.getInstance()

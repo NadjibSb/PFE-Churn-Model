@@ -5,7 +5,7 @@
             "accurency": 0.9804,
             "history": [
                 {
-                    "date": 1599179962.0665848,
+                    "date": 1599259239.2512653,
                     "value": {
                         "id": 2,
                         "accurency": 0.9804,
@@ -13,7 +13,7 @@
                     }
                 },
                 {
-                    "date": 1599180002.6703165,
+                    "date": 1599304004.9200313,
                     "value": {
                         "id": 2,
                         "accurency": 0.9804,
@@ -21,7 +21,95 @@
                     }
                 },
                 {
-                    "date": 1599180274.59508,
+                    "date": 1599304528.529369,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304677.4283552,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304821.4734795,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304957.9574106,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599305022.0109549,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599305966.3320425,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306062.7730558,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306240.870128,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306456.341512,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306505.8066952,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306563.4676318,
+                    "value": {
+                        "id": 2,
+                        "accurency": 0.9804,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599307217.9534998,
                     "value": {
                         "id": 2,
                         "accurency": 0.9804,
@@ -35,7 +123,7 @@
             "accurency": 0.9416,
             "history": [
                 {
-                    "date": 1599179962.071222,
+                    "date": 1599259239.2578452,
                     "value": {
                         "id": 0,
                         "accurency": 0.9416,
@@ -43,7 +131,7 @@
                     }
                 },
                 {
-                    "date": 1599180002.6866117,
+                    "date": 1599304004.9282134,
                     "value": {
                         "id": 0,
                         "accurency": 0.9416,
@@ -51,7 +139,95 @@
                     }
                 },
                 {
-                    "date": 1599180274.603468,
+                    "date": 1599304528.5369403,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304677.4370525,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304821.4834523,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304957.9690602,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599305022.0207124,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599305966.345313,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306062.7877283,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306240.881099,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306456.3571227,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306505.8214567,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306563.4812238,
+                    "value": {
+                        "id": 0,
+                        "accurency": 0.9416,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599307217.9646082,
                     "value": {
                         "id": 0,
                         "accurency": 0.9416,
@@ -65,7 +241,7 @@
             "accurency": 0.9823,
             "history": [
                 {
-                    "date": 1599179962.0730293,
+                    "date": 1599259239.2596056,
                     "value": {
                         "id": 1,
                         "accurency": 0.9823,
@@ -73,7 +249,7 @@
                     }
                 },
                 {
-                    "date": 1599180002.690055,
+                    "date": 1599304004.9298623,
                     "value": {
                         "id": 1,
                         "accurency": 0.9823,
@@ -81,7 +257,95 @@
                     }
                 },
                 {
-                    "date": 1599180274.6059778,
+                    "date": 1599304528.5380578,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304677.4394717,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304821.4895875,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599304957.97547,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599305022.0250018,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599305966.3514643,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306062.7943172,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306240.884837,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306456.3660774,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306505.824584,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599306563.4880137,
+                    "value": {
+                        "id": 1,
+                        "accurency": 0.9823,
+                        "status": 1
+                    }
+                },
+                {
+                    "date": 1599307217.9705167,
                     "value": {
                         "id": 1,
                         "accurency": 0.9823,
@@ -106,9 +370,9 @@
             "id": 1,
             "accurency": 0.9823,
             "status": 1,
-            "start_adapt_time": 1599180276.6264963,
-            "end_adapt_time": 1599180286.6889744,
-            "adapt_duration": 10.062478065490723
+            "start_adapt_time": 1599307219.9988396,
+            "last_adapt_time": 1599307222.0496194,
+            "last_adapt_duration": 2.0507798194885254
         }
     },
     "Analyse": {
@@ -117,21 +381,98 @@
             "id": 2,
             "history": [
                 {
-                    "date": 1599179964.0776231,
+                    "date": 1599259241.2637634,
                     "value": {
                         "to_adapt": false,
                         "id": 2
                     }
                 },
                 {
-                    "date": 1599180004.696421,
+                    "date": 1599304006.934243,
                     "value": {
                         "to_adapt": false,
                         "id": 2
                     }
                 },
                 {
-                    "date": 1599180276.6117032,
+                    "date": 1599304530.5399976,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599304679.4453278,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599304823.4972866,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599304959.9858658,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599305024.0302675,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599305968.360478,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599306064.805926,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599306242.8912385,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599306458.3763416,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599306507.8303905,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599306565.5034492,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 2
+                    }
+                },
+                {
+                    "date": 1599307219.979119,
                     "value": {
                         "to_adapt": false,
                         "id": 2
@@ -144,21 +485,98 @@
             "id": 0,
             "history": [
                 {
-                    "date": 1599179964.0791543,
+                    "date": 1599259241.2650728,
                     "value": {
                         "to_adapt": false,
                         "id": 0
                     }
                 },
                 {
-                    "date": 1599180004.698351,
+                    "date": 1599304006.9360633,
                     "value": {
                         "to_adapt": false,
                         "id": 0
                     }
                 },
                 {
-                    "date": 1599180276.6170309,
+                    "date": 1599304530.542118,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599304679.4485674,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599304823.5011659,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599304959.990163,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599305024.0345726,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599305968.3660882,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599306064.8107572,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599306242.8964658,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599306458.38094,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599306507.8359504,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599306565.5083706,
+                    "value": {
+                        "to_adapt": false,
+                        "id": 0
+                    }
+                },
+                {
+                    "date": 1599307219.9861135,
                     "value": {
                         "to_adapt": false,
                         "id": 0
@@ -171,21 +589,98 @@
             "id": 1,
             "history": [
                 {
-                    "date": 1599179964.0844722,
+                    "date": 1599259241.2719138,
                     "value": {
                         "to_adapt": true,
                         "id": 1
                     }
                 },
                 {
-                    "date": 1599180004.7062924,
+                    "date": 1599304006.944933,
                     "value": {
                         "to_adapt": true,
                         "id": 1
                     }
                 },
                 {
-                    "date": 1599180276.625002,
+                    "date": 1599304530.5441303,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599304679.4587357,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599304823.508861,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599304960.0011358,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599305024.042309,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599305968.3813822,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599306064.8190906,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599306242.9048004,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599306458.3897383,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599306507.8505344,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599306565.5241907,
+                    "value": {
+                        "to_adapt": true,
+                        "id": 1
+                    }
+                },
+                {
+                    "date": 1599307219.9930594,
                     "value": {
                         "to_adapt": true,
                         "id": 1
@@ -199,19 +694,85 @@
             "test_accuracy": 99,
             "history": [
                 {
-                    "date": 1599179964.1967926,
+                    "date": 1599259241.3527792,
                     "value": {
                         "test_accuracy": 99
                     }
                 },
                 {
-                    "date": 1599180004.7625074,
+                    "date": 1599304006.9998379,
                     "value": {
                         "test_accuracy": 99
                     }
                 },
                 {
-                    "date": 1599180276.6803129,
+                    "date": 1599304530.592049,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599304679.4999342,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599304823.5551345,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599304960.0546377,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599305024.08626,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599305968.4365199,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599306064.8574684,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599306242.9460983,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599306458.427607,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599306507.8884275,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599306565.5850103,
+                    "value": {
+                        "test_accuracy": 99
+                    }
+                },
+                {
+                    "date": 1599307220.0449874,
                     "value": {
                         "test_accuracy": 99
                     }
