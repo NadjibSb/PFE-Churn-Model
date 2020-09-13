@@ -8,9 +8,8 @@ from app.mapek.knowledge import Knowledge
 def run():
     monitor = Monitor()
     knowledge = Knowledge.getInstance()
-    params = knowledge.get("params")
-
     while True:
+        params = knowledge.get("params")
         monitor.notify()
         time.sleep(params["frequency"])
 
