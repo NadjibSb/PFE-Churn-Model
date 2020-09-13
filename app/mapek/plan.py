@@ -36,23 +36,27 @@ class Plan(Observer):
         _dfM = df.drop(['mobile_number','segment'], axis=1)
 
         ### Split data to train/test data
+        '''
         _dfM1 = _dfM[_dfM.churn==0]
         _dfM2 = _dfM[_dfM.churn==1]
+        '''
         #print("- Churners :",_dfM1.shape)
         #print("- Non Churners :",_dfM2.shape)
 
         # split dataset to 70% Train data & 30% test data
+        X = _dfM.drop(["churn"],axis=1)
+        Y = _dfM["churn"]
+        X_train, X_test, y_train, y_test = train_test_split(X,Y, test_size=0.3, train_size=0.7, random_state=1)
+        '''
         X_train1, X_test1 = train_test_split(_dfM1, test_size=0.3, train_size=0.7, random_state=1)
         X_train2, X_test2 = train_test_split(_dfM2, test_size=0.3, train_size=0.7, random_state=1)
         train = pd.concat([X_train1,X_train2],axis=0).sample(frac=1)
         test= pd.concat([X_test1,X_test2],axis=0).sample(frac=1)
-
-
         X_train = train.drop(['churn'], axis=1)
         y_train = train['churn']
         X_test = test.drop(['churn'], axis=1)
         y_test = test['churn']
-
+        '''
         #print("X_train Shape : ", X_train.shape)
         #print("X_test Shape : ", X_test.shape)
 
@@ -73,7 +77,7 @@ class Plan(Observer):
         y_pred = model.predict(X_test)
         test_acc = model.score(X_test, y_test)
         knowledge.save("Plan",key,{"new_accuracy":test_acc})
-        self.updateStatus(key)
+        #self.updateStatus(key)
         ####
         print("Test Accuracy score {0}".format(test_acc))
         print(classification_report(y_test, y_pred))
@@ -94,7 +98,8 @@ class Plan(Observer):
             modelInfo = data[key]
             if modelInfo["to_adapt"]:
                 print(key+" adapting ...")
-                df = pd.read_csv("{0}/dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]),index_col="index")
+                print(" adapting ...{0}".format(modelInfo["id"]+1))
+                df = pd.read_csv("{0}/dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]+1),index_col="index")
                 #print("load dataset {0} : ".format(modelInfo["id"])+str(df.shape))  
 
                 self._train(key,modelInfo["id"],df)
@@ -105,7 +110,7 @@ class Plan(Observer):
                 '''
 
                 execute = Execute.getInstance()
-                execute.notify({"id":modelInfo["id"]})
+                execute.notify({"id":modelInfo["id"],"name":key})
 
 
     def updateStatus(self,key):
