@@ -98,8 +98,7 @@ class Plan(Observer):
             modelInfo = data[key]
             if modelInfo["to_adapt"]:
                 print(key+" adapting ...")
-                print(" adapting ...{0}".format(modelInfo["id"]+1))
-                df = pd.read_csv("{0}/dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]+1),index_col="index")
+                df = pd.read_csv("{0}/dataset/clustered_{1}.csv".format(BASE_PATH,modelInfo["id"]),index_col="index")
                 #print("load dataset {0} : ".format(modelInfo["id"])+str(df.shape))  
 
                 self._train(key,modelInfo["id"],df)

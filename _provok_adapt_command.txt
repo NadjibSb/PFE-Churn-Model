@@ -1,1 +1,5 @@
 db.customers.update({segment:1,churn:false},{$set:{churn:true}},{multi:true})
+
+#######
+
+pip install pymongo
