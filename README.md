@@ -2,10 +2,8 @@
 
 A clustering model deployed with a flask REST API to predict client clustering for Ooredoo clients
 
-### Staging url
+### Routes
 
-- [https://clustering-model-ooredoo-stage.herokuapp.com/](https://clustering-model-ooredoo-stage.herokuapp.com/)
+- Test clustering : [http://localhost:5000/predictTest](http://localhost:5000/predictTest)
+- Launch clustering : [http://localhost:5000/predictAll](http://localhost:5000/predictAll)
 
-### Production url
-
-- [https://clustering-model-ooredoo-pro.herokuapp.com/](https://clustering-model-ooredoo-pro.herokuapp.com/)
