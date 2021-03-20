@@ -9,7 +9,7 @@ Flask==1.1.2
 gunicorn==20.0.4
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib==0.15.1
 MarkupSafe==1.1.1
 mkl-fft==1.1.0
