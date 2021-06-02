@@ -31,5 +31,5 @@ stopit==1.1.2
 TPOT==0.11.5
 tqdm==4.48.2
 update-checker==0.18.0
-urllib3==1.25.9
+urllib3==1.26.5
 Werkzeug==1.0.1
